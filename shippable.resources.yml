@@ -11,9 +11,9 @@ resources:
     type: image
     integration: cock1-hub
     source:
-      name: "shiphitchcock1/betaci_nod_limitless_pl"
+      name: "varsha-arun/pipeline"
       isPull: false
-      tag: "deploy.5"
+      tag: "deploy.1"
      
  # - name: rsynch-ecscluster1
   #  type: ecsCluster
