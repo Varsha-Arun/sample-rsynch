@@ -15,12 +15,12 @@ resources:
       isPull: false
       tag: "deploy.1"
      
- # - name: rsynch-ecscluster1
-  #  type: ecsCluster
-   # integration: varsha-ecscluster
-    #source:
-     # name : "testCL" #name of the cluster we are deploying
-      #region: "us-west-2"
+  - name: rsynch-ecscluster1
+    type: ecsCluster
+    integration: varsha-ecscluster
+    source:
+      name : "testCL" #name of the cluster we are deploying
+      region: "us-west-2"
       
   - name: rsynch-param1
     type: params
@@ -52,9 +52,9 @@ resources:
     source:
       base: "1.2.3-alpha"
    
-#  - name: ghupgrade-ecsplv2
- #   type: gitRepo
-  #  integration: varshaarun-github
-   # source:
-    #  name: "Varsha-Arun/sample-ecsplv2" #you should've access to this project (even if it's public)
-     # branch: "upgrade"
+  - name: ghrsynch-ecsplv2upgrade
+    type: syncRepo
+    integration: "varshaarun-github"
+    source:
+      name: "Varsha-Arun/sample-ecsplv2" #you should've access to this project (even if it's public)
+      branch: "upgrade"
