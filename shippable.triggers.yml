@@ -2,7 +2,7 @@ triggers:
   - name: triggerrsynch1
     type: trigger
     source:
-      message: 'testing trigger in yml'
+      message: 'testing trigger jobs in yml'
       
   - name: triggerrsynch2
     type: trigger
