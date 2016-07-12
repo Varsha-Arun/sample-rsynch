@@ -4,6 +4,7 @@ jobs:
     steps:
       - GET: rsynch-img1
       - GET: triggerrsynch1
+      - GET: rsynch-param1
       
   - name: rsynch-manifest2
     type: manifest
