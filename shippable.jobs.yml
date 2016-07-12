@@ -10,6 +10,15 @@ jobs:
     steps:
       - GET: rsynch-img2
       - GET: triggerrsynch2
+      
+  - name: rsynch-manifesttest
+    type: manifest
+    steps:
+      - GET: rsynch-img1
+      - GET: rsynch-param1
+      - GET: rsynch-replica1
+      - GET: rsynch-dopt1
+      - GET: triggerrsynch3
      
 #  - name: repo-ecsdeploy
  #   type: ecsDeploy
