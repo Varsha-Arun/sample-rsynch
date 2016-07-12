@@ -40,19 +40,17 @@ resources:
     type: dockerOptions
     source:
       memory: 128
-      cpu-shares: 4
-      portMappings:
-        - 80:80
+      publishAllPorts : true
         
   - name: rsynch-replica1
     type: replicas
     source:
-      count: 1
+      count: 2
       
   - name: rsynch-resource1
     type: version
     source:
-      base: "0.0.1-beta"
+      base: "1.2.3-alpha"
    
 #  - name: ghupgrade-ecsplv2
  #   type: gitRepo
