@@ -1,5 +1,5 @@
 jobs:
-  - name: rsynch-manifest1
+  - name: rsynch-manifest3
     type: manifest
     steps:
       - GET: rsynch-img1
