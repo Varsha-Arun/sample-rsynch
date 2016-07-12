@@ -1,6 +1,5 @@
 resources:
-      
-  - name: ecs-img1
+  - name: rsynch-img1
     type: image
     integration: cock1-hub
     source:
@@ -8,7 +7,7 @@ resources:
       isPull: false
       tag: "deploy.4"
       
-  - name: ecs-img2
+  - name: rsynch-img2
     type: image
     integration: cock1-hub
     source:
@@ -16,12 +15,12 @@ resources:
       isPull: false
       tag: "deploy.5"
      
-  - name: ecs-ecscluster1
-    type: ecsCluster
-    integration: varsha-ecscluster
-    source:
-      name : "testCL" #name of the cluster we are deploying
-      region: "us-west-2"
+ # - name: rsynch-ecscluster1
+  #  type: ecsCluster
+   # integration: varsha-ecscluster
+    #source:
+     # name : "testCL" #name of the cluster we are deploying
+      #region: "us-west-2"
       
  # - name: ecs-param1
   #  type: params
