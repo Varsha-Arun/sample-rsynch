@@ -6,9 +6,10 @@ jobs:
       - GET: triggerrsynch1
       - GET: rsynch-param1
       
-  - name: rsynch-manifest3
+  - name: rsynch-verres3
     type: resource
     steps:
+      - GET: rsynch-resource1
       - GET: rsynch-resource1
       
   - name: rsynch-manifest2
