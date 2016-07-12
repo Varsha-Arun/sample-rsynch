@@ -36,18 +36,23 @@ resources:
      #   foo: booo
       #  api_url: https://api.shippable.co
         
-  #- name: ecs-dopt1
-   # type: dockerOptions
-    #source:
-     # memory: 128
-      #cpu-shares: 4
-      #portMappings:
-       # - 80:80
+  - name: rsynch-dopt1
+    type: dockerOptions
+    source:
+      memory: 128
+      cpu-shares: 4
+      portMappings:
+        - 80:80
         
-#  - name: ecs-replica1
- #   type: replicas
-  #  source:
-   #   count: 1
+  - name: rsynch-replica1
+    type: replicas
+    source:
+      count: 1
+      
+  - name: rsynch-resource1
+    type: version
+    source:
+      base: "0.0.1-beta"
    
 #  - name: ghupgrade-ecsplv2
  #   type: gitRepo
