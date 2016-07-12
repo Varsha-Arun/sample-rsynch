@@ -6,6 +6,11 @@ jobs:
       - GET: triggerrsynch1
       - GET: rsynch-param1
       
+  - name: rsynch-manifest3
+    type: resource
+    steps:
+      - GET: rsynch-resource1
+      
   - name: rsynch-manifest2
     type: manifest
     steps:
