@@ -3,7 +3,7 @@ jobs:
     type: manifest
     steps:
       - GET: rsynch-img1
-      #- GET: triggerrsynch1
+      - GET: triggerrsynch1
       
   - name: rsynch-manifest2
     type: manifest
