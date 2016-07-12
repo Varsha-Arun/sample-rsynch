@@ -3,6 +3,7 @@ jobs:
     type: manifest
     steps:
       - GET: rsynch-img1
+      - GET: triggerrsynch1
      
 #  - name: repo-ecsdeploy
  #   type: ecsDeploy
