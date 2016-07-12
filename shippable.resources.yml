@@ -28,7 +28,7 @@ resources:
       params:
         api_url : "betaapi.shippable.co"
         MONGO_API_URL: "localhost:28017"
-        beta=bar
+        beta: bar
         
  # - name: ecs-param2
   #  type: params
